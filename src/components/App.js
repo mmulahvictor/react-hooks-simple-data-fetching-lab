@@ -11,10 +11,7 @@ function App () {
                 setDogPic( data.message );
             } );
     }, [] );
-    // use an empty dependencies array, so we only run the fetch request ONCE
-
     if ( !dogPic ) return <p>Loading...</p>;
-
     return <img src={ dogPic } alt="A Random Dog" />;
 }
 
